@@ -1,0 +1,365 @@
+html,
+body {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+}
+
+.main_img {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  background-color: rgb(71, 69, 69);
+  opacity: 0.7;
+  margin: 0 auto;
+  width: 100%;
+  height: 30px;
+  max-width: 1800px;
+  z-index: 5;
+}
+
+.nav {
+  justify-content: center;
+}
+
+.nav__link {
+  color: aliceblue;
+  font-size: 26px;
+  font-family: monserat san serif;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.nav-link:hover {
+  color: rgb(138, 138, 138);
+}
+
+.main__page {
+  height: 1000px;
+  background-image: url(../img/drew-coffman-llWjwo200fo-unsplash.jpg);
+  background-position: 12% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 1;
+  width: 100%;
+}
+
+.main__page::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  height: 1000px;
+}
+
+.main_img {
+  width: 100%;
+  height: 100%;
+}
+
+.main__content {
+  height: 100%;
+}
+
+.main__title {
+  margin-top: 20%;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.main__subtitle {
+  width: 500px;
+  height: 50px;
+  margin-top: 40px;
+  color: white;
+  font-size: 20px;
+  z-index: 10;
+}
+
+.second {
+  z-index: 10;
+}
+
+.actions {
+  width: 265px;
+  margin-top: 40px;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 50px;
+  z-index: 10;
+  border-radius: 50px;
+  box-shadow: inset 0 0 30px rgb(97, 96, 96);
+}
+
+.black {
+  background-color: rgb(0, 0, 0);
+}
+
+.main__actions {
+  color: white;
+}
+
+.black a {
+  color: #f1f1f1;
+}
+
+.white {
+  background-color: white;
+}
+
+.white a {
+  color: #000;
+}
+
+.actions a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.portfolio {
+  max-width: 100%;
+  background-color: rgb(34, 32, 32);
+  margin-bottom: 50px;
+}
+
+.port__title {
+  color: #f1f1f1;
+  margin-top: 50px;
+}
+
+.portfolio__content {
+  margin: 80px auto;
+  max-width: 500px;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.about {
+  max-width: 100%;
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about__text p {
+  max-width: 80%;
+}
+
+.skills p {
+  max-width: 100%;
+}
+
+.about__text p {
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* **** PORTFOLIO ***** */
+
+.cash {
+  margin-top: 50px;
+}
+
+.price {
+  margin-top: 100px;
+  max-width: 100%;
+  background-color: #171717;
+}
+
+.price__title {
+  margin-top: 100px;
+}
+
+.price__title h1,
+.price__title h3 {
+  color: wheat;
+}
+
+.price__content {
+  margin-top: 50px;
+  color: white;
+}
+
+.menu-burger__header {
+  display: none;
+}
+
+.contacts {
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+.webp .contacts {
+  background-size: cover;
+}
+
+.numbers {
+  margin-top: 10%;
+}
+
+.footer {
+  background: #000;
+}
+
+@media (max-width: 912px) {
+  .main__title {
+    margin-top: 90%;
+  }
+}
+
+@media (max-width: 820px) {
+  .main__title {
+    margin-top: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    display: block;
+    position: fixed;
+    top: 55px;
+    left: 100%;
+    background: rgb(20, 20, 20);
+    box-shadow: #ccc;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
+    /* opacity: 0; */
+    transition: all 0.4s ease;
+    opacity: 0.8;
+  }
+
+  .nav.open-menu {
+    /* opacity: 1; */
+    max-width: 30%;
+    margin-left: 60%;
+    margin-right: 10%;
+    z-index: 1000;
+    left: 0;
+  }
+
+  .nav li {
+    margin: 10px 0px 20px 2px;
+    font-size: 14px;
+  }
+
+  /* BURGER */
+
+  .menu-burger__header {
+    top: 10px;
+    position: fixed;
+    width: 40px;
+    height: 35px;
+    display: block;
+    margin-left: 85%;
+  }
+
+  .menu-burger__header span,
+  .menu-burger__header::after,
+  .menu-burger__header::before {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #5a5a5a;
+    margin: 0 auto;
+  }
+
+  .menu-burger__header span {
+    top: 13px;
+  }
+
+  .menu-burger__header::after {
+    content: "";
+    bottom: 12px;
+  }
+
+  .menu-burger__header::before {
+    content: "";
+    top: 5px;
+  }
+
+  .menu-burger__header.open-menu span {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .menu-burger__header.open-menu:before {
+    transform: rotate(38deg);
+    top: 16px;
+    transition: 0.4s;
+  }
+
+  .menu-burger__header.open-menu:after {
+    transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s;
+  }
+
+  .header {
+    opacity: 1;
+    width: auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .main__title {
+    margin-top: 48%;
+  }
+}
+
+@media (max-width: 474) {
+  .main__title {
+    margin-top: 145%;
+  }
+}
+
+@media (max-width: 414px) {
+  .main__title {
+    margin-top: 100%;
+  }
+
+  .actions {
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 390) {
+  .main__title {
+    margin-top: 110%;
+  }
+
+  .actions {
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .main__title {
+    margin-top: 60%;
+  }
+
+  .actions {
+    line-height: 20px;
+  }
+}
+
+.webp .main__page { background-image: url(../img/drew-coffman-llWjwo200fo-unsplash.webp); }

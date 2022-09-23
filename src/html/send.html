@@ -1,0 +1,44 @@
+<div class="wrapper">
+    <div class="form">
+        <form action="#" id="form" class="form__body">
+            <h1 class="form__title">Отправка данных на почту</h1>
+            <div class="form__item">
+                <label for="formName" class="form__label">Имя*</label>
+                <input id="formName" type="text" name="name" class="form__input _req">
+            </div>
+            <div class="form__item">
+                <label for="formEmail" class="form__label">E-mail*</label>
+                <input id="formEmail" type="text" name="E-mail" class="form__input _req _email">
+            </div>
+            <div class="form__item">
+                <label for="formMessage" class="form__label">Сообщение</label>
+                <textarea name="message" id="formMessage" class="form__input"></textarea>
+            </div>
+            <div class="form__item">
+                <div class="form__label">Тариф</div>
+                <select name="name" class="select">
+                    <option value="от 18 до 25">Молодой</option>
+                    <option value="от 25 до 45">Старший</option>
+                    <option value="от 45">Супер Стар</option>              
+                </select>
+            </div>
+            <div class="form__item">
+                <div class="form__label">Прикрепить фото</div>
+                <div class="file">
+                    <div class="file__item">
+                        <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file__input">
+                        <div class="file__button">Выбрать</div>
+                    </div>
+                    <div id="formPreview" class="file__preview"></div>
+                </div>
+            </div>
+            <div class="form__item">
+                <div class="chekbox">
+                    <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox__input _req">
+                    <label for="formAgreement" class="checkbox__label">Я даю своё согласие на обработку персональных данных</label>
+                </div>
+            </div>
+            <button type="submit" class="form__button">Отправить</button>
+        </form>
+    </div>
+</div>
